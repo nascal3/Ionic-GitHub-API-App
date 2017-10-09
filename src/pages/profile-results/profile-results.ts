@@ -11,7 +11,9 @@ import { RepoInterface} from '../../models/repo.interface';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  segment: 'profile/results/:username'
+})
 @Component({
   selector: 'page-profile-results',
   templateUrl: 'profile-results.html',
